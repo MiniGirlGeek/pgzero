@@ -88,6 +88,14 @@ class Clock:
         self.events = []
         self._each_tick = []
 
+    def __repr__(self):
+        return '<{} t={!r} fired={!r} events={!r}>'.format(
+                type(self).__name__,
+                self.t,
+                self.fired,
+                self.events
+            )
+
     def schedule(self, callback, delay):
         """Schedule callback to be called once, at `delay` seconds from now.
 
