@@ -49,6 +49,14 @@ class Event:
         self.name = str(cb)
         self.repeat = repeat
 
+    def __repr__(self):
+        return '<{} {!r} {!r} repeat={!r}>'.format(
+                type(self).__name__,
+                self.time,
+                self.cb,
+                self.repeat
+            )
+
     def __lt__(self, ano):
         return self.time < ano.time
 
