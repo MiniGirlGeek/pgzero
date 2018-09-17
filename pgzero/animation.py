@@ -172,6 +172,15 @@ class Animation:
         each_tick(self.update)
         self.animations.append(self)
 
+    def __repr__(self):
+        return '<{} {!r} tween=\'{!r}\' duration={!r} on_finished={!r}>'.format(
+                type(self).__name__,
+                self.object,
+                self.tween,
+                self.duration,
+                self.on_finished
+            )
+
     def update(self, dt):
         self.t += dt
         n = self.t / self.duration
