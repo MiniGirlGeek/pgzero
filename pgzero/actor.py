@@ -106,7 +106,7 @@ class Actor:
         return iter(self._rect)
 
     def __repr__(self):
-        return '<{} {!r} pos={!r}>'.format(
+        return '<{} object image_name={!r} pos={!r}>'.format(
             type(self).__name__,
             self._image_name,
             self.pos

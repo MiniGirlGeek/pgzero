@@ -50,7 +50,7 @@ class PGZeroGame:
         self.handlers = {}
 
     def __repr__(self):
-        return '<{} Object mod={!r} screen={!r} width={!r} height={!r} title={!r} icon={!r} running={!r} keyboard={!r} handlers={!r}>'.format(
+        return '<{} object mod={!r} screen={!r} width={!r} height={!r} title={!r} icon={!r} running={!r} keyboard={!r} handlers={!r}>'.format(
                 type(self).__name__,
                 self.mod,
                 self.screen,

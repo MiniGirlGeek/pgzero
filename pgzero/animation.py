@@ -173,7 +173,7 @@ class Animation:
         self.animations.append(self)
 
     def __repr__(self):
-        return '<{} {!r} tween=\'{!r}\' duration={!r} on_finished={!r}>'.format(
+        return '<{} object object={!r} tween={!r} duration={!r} on_finished={!r}>'.format(
                 type(self).__name__,
                 self.object,
                 self.tween,

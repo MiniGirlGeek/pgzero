@@ -89,7 +89,7 @@ class Clock:
         self._each_tick = []
 
     def __repr__(self):
-        return '<{} t={!r} fired={!r} events={!r}>'.format(
+        return '<{} object t={!r} fired={!r} events={!r}>'.format(
                 type(self).__name__,
                 self.t,
                 self.fired,
