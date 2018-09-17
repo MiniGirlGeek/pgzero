@@ -49,6 +49,20 @@ class PGZeroGame:
         self.keyboard = pgzero.keyboard.keyboard
         self.handlers = {}
 
+    def __repr__(self):
+        return '<{} Object mod={!r} screen={!r} width={!r} height={!r} title={!r} icon={!r} running={!r} keyboard={!r} handlers={!r}>'.format(
+                type(self).__name__,
+                self.mod,
+                self.screen,
+                self.width,
+                self.height,
+                self.title,
+                self.icon,
+                self.running,
+                self.keyboard,
+                self.handlers
+            )
+
     def reinit_screen(self):
         """Reinitialise the window.
 
